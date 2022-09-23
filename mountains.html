@@ -16,43 +16,56 @@
 </head>
 <body>
 
-    <h1>Mountains!</h1>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="nationalparks.html">National Parks </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mountains.html">Mountains <span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Outdoor Advocate Society!</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nationalparks.html">National Parks</a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="mountains.html">Mountains <span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </nav>  
+      </nav>        
 
       <br>
 
-      
-      <div class="input-group mb-3">
-        <select name="mountainsData" id="mountainsData">
-            <option value="1">Choose One...</option>
-        </select>       
-      </div>
-      
-      <div style="display:none" id="idDivContent">
-        <div id="idDivTitle"></div>
-        <div id="idDivImage">
-            <img id="idImage">
+      <main class="container p-3">     
+        <div class="d-flex justify-content-center">
+          <select name="mountainsData" id="mountainsData" class="form-select">
+              <option value="1">Choose One...</option>
+          </select>       
         </div>
-        <div id="idDivDesc"></div>
-      </div>
-
+        <br>
+        <div style="display:none" id="idDivContent"  class="row p-4 polaroid">          
+          <h3 id="idDivTitle" class="d-flex justify-content-center"></h3>  
+         
+          <div id="idDivImage" class="col-12 col-sm-6 text-center mb-2">
+              <img id="idImage" class="rounded">
+          </div>
+          <div id="idRow" class="col-12 col-sm-6 mt-3">
+            <div id="idDivDesc" ></div>
+            <br>
+          </div>
+          
+          
+        </div>
+      </main> 
     <!-- Bootstrap Bundle with Popper -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="assets/scripts/load_mountains_data.js"></script>
+    <script src="assets/scripts/mountain.js"></script>
 </body>
 </html>

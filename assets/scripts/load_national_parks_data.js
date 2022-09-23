@@ -4,6 +4,7 @@ let locationsArray = []
 let nationalParksArray = []
 let parkTypesArray = []
 
+
 window.onload = function(){
 
     loadJsonData("assets/data/locations.json").then((locations) => {

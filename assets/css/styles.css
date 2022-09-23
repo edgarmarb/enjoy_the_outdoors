@@ -1,0 +1,63 @@
+.card-columns {
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 5;
+    }
+  }
+
+  .selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+  * {
+    font-family: 'Montserrat', sans-serif;
+    color: #0d0d4d;
+}
+
+  body {
+    background-color: #050142;
+    background-image: url('../images/lago.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+  div.polaroid {
+    background-color: rgba(122, 162, 194, .75);
+    box-shadow: 0 4px 8px 0 rgba(109, 159, 189, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+  }
+
+  #galery .col-lg-4{
+    margin: 0 !important;
+    padding: 25px;
+  }
+
+  #galery img{
+    width: 100%;
+  }
+
+  #galery img:hover{
+    border: 3px solid white;
+  }
